@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- add tags for google searches later-->
+    <title>Miss Sherry's Sweet Tea & Tarot</title>
+    <link rel="stylesheet" href="css/mainV2.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <!-- <a class="logo" href="index.html">Sweet<span>Tea</span>Tarot</a> -->
+            <div class="teabag-container">
+                <div class="teabag-front">
+                    <a class="logo" href="indexV2.html">Sweet<br><span>Tea</span>&<br>Tarot</a>
+                </div>
+                <div class="teabag-side"></div>
+                <div class="teabag-top-back">
+                    <div class="teabag-top-front">
+                        <div class="teabag-string"></div>
+                        <div class="staple"></div>
+                    </div>
+                </div>
+            </div>
+
+            <img id="mobile-cta" class="mobile-menu" src="images/newMenu.svg" alt="open navigation">
+
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="close navigation">
+                <ul class="primary-nav">
+                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href="#bio">About Miss Sherry</a></li>
+                    <li><a href="#rates-section">Pricing</a></li>
+                </ul>
+                <ul class="secondary-nav">
+                    <li><a href="#contact-section">Contact</a></li>
+                    <li class="call-now"><a href="tel:+1-423-788-6914">Call Now!</a></li> 
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <h1 class="subhead" id="bio">About Miss Sherry!</h1>
+                <p>
+                    Pour a glass of sweet tea and let Miss Sherry share her fortune telling expertise.
+                    Born and raised in East Tennessee, she honed her skills reading tarot cards for friends and family before 
+                    selling her trade through the larger tarot card services. After 20 years Miss Sherry decided to talk to people directly without the worry of corporate oversight asking her to 
+                    upsell.
+                </p> 
+                <p> 
+                    You can now talk to Miss Sherry herself without worry of being redirected to a random unknown advisor.
+                    With decades of experience and an understanding of life that only motherhood can offer, let Miss 
+                    Sherry share her wisdom with you.
+                </p>
+
+                <div class="hero-cta">
+                    <a href="tel:+1-423-788-6914" class="primary-cta">Give Her A Call!</a>
+                </div>
+            </div>
+
+            <img src="images/SweetTeaTarotCard.png" class="hero-img" alt="illustration">
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <ul class="features-list">
+                <li>Stuck with a hard decision?</li>
+                <li>Worried about something?</li>
+                <li>Want to learn more about yourself?</li>
+                <li>Or even just curious about Tarot Cards?</li>
+            </ul>
+
+            <img src="images/holding-phone.jpg" alt="Man holding phone">
+        </div>
+    </section>
+
+    <section class="rates-section" id="rates-section">
+        <div class="container">
+            <table>
+                <tr>
+                    <th>Time</th>
+                    <th>Cost</th>
+                </tr>
+                <tr>
+                    <td>30 min</td>
+                    <td>$15</td>
+                </tr>
+                <tr>
+                    <td>45 min</td>
+                    <td>$25</td>
+                </tr>
+                <tr>
+                    <td>60 min</td>
+                    <td>$30</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="images/person.jpg" alt="person">
+
+                    <blockquote>"I couldn't believe what I was hearing!"</blockquote>
+                    <cite>- Jane Doe</cite>
+                </li>
+                <li>
+                    <img src="images/person.jpg" alt="person">
+
+                    <blockquote>"Worth every penny."</blockquote>
+                    <cite>- Jane Doe</cite>
+                </li>
+                <li>
+                    <img src="images/person.jpg" alt="person">
+
+                    <blockquote>"I'll be calling again!"</blockquote>
+                    <cite>- Jane Doe</cite>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact-section">
+        <div class="container">
+            <div class="contact-left">
+                <h2>Contact</h2>
+
+                <form action="">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+                    <input type="submit" class="send-message-cta" value="Send message">
+                </form>
+            </div>
+
+            <div class="contact-right">
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <h5>Miss Sherry's services are for entertainment purposes. Must be 18 years or older to call.
+        <br> &copy; Copyright 2021, Steven Warren</h5>
+    </footer>
+
+    <script>
+        const mobileBtn = document.getElementById('mobile-cta')
+            nav= document.querySelector('nav')
+            mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+    </script>
+
+    <script type="application/ld+json">
+        “@context”: “”,
+        “@type”: “Tarot”,
+        “url”: “http://www.example.com”,
+        “name”: “Sweet Tea Tarot”,
+        “contactPoint”: {
+        “@type”: “ContactPoint”,
+        “telephone”: “+1-423-788-6914”,
+        “contactType”: “Customer service”
+    </script>
+
+</body>
+</html>
