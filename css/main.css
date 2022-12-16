@@ -168,12 +168,21 @@ ul {
   padding: 0;
 }
 
+#message {
+  padding-right: 0.5em;
+}
+
 section {
   padding: 5em 2em;
 }
 
 .hero {
   text-align: center;
+}
+
+i {
+  font-size: 3em;
+  padding: 0.5em;
 }
 
 .left-col .subhead {
@@ -632,10 +641,10 @@ footer {
   .testimonials-section ul li {
     margin: 0 1em;
   }
-  .contact-section {
+  .message-section {
     position: relative;
   }
-  .contact-section .container {
+  .message-section .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
