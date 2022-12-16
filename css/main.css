@@ -398,6 +398,11 @@ nav li.call-now a:hover {
   cursor: pointer;
 }
 
+.send-message-cta {
+  font-size: 1em;
+  font-weight: bold;
+}
+
 footer {
   background: url("../images/BlueHourSunsetAndMountains.jpg");
   background-color: black;
