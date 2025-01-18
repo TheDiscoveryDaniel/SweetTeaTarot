@@ -88,12 +88,12 @@ let tarotDeck = createDeck();
 console.log("This is when the deck is created", createDeck());
 shuffleDeck(tarotDeck);
 console.log("This is after it is shuffled", tarotDeck);
-document.getElementById('results').textContent = 'Is this your card? ' + tarotDeck[0].cardName;
+document.getElementById('results').textContent = 'Your card will show up here';
 
 function shuffleFunction() {
     shuffleDeck(tarotDeck);
     var yourCard = document.getElementById('results');
-    yourCard.textContent = 'is this your card? ' + tarotDeck[0].cardName;
+    yourCard.textContent = 'Your card: ' + tarotDeck[0].cardName;
     
     var img = document.createElement("img");
     var imageCard = tarotDeck[0].cardName;
